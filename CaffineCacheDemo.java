@@ -6,6 +6,14 @@ import com.github.benmanes.caffeine.cache.Caffeine;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
+/* **** INCLUDE DEPENDENCY IN POM ****
+<!-- https://mvnrepository.com/artifact/com.github.ben-manes.caffeine/caffeine -->
+    <dependency>
+        <groupId>com.github.ben-manes.caffeine</groupId>
+        <artifactId>caffeine</artifactId>
+        <version>3.1.1</version>
+    </dependency>
+***********/
 public class CaffineCacheDemo {
     public static void main(String[] args) throws InterruptedException {
         Cache<String, DummyGitResponse> cache = Caffeine.newBuilder()
